@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/index.scss';
+
+.formToDo {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 50px;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(212, 207, 136);
+  display: flex;
+  align-items: flex-end;
+
+  input {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .formToDo {
+    width: 320px;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+}

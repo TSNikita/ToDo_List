@@ -1,0 +1,69 @@
+@import '../../../styles/variables';
+@import '../../../styles/index.scss';
+
+.task {
+  max-width: 900px;
+  height: 80px;
+  background-color: rgb(119, 203, 214);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  &_position {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &_date {
+    width: 30px;
+  }
+  &_time {
+    width: 30px;
+  }
+}
+
+.task_button_container {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .task {
+    width: 320px;
+
+    &_date {
+      width: 64px;
+    }
+
+    &_time {
+      display: none;
+    }
+
+    &_priority {
+      display: none;
+    }
+
+    &_status {
+      display: none;
+    }
+  }
+
+  .task_button_container {
+    left: 50px;
+  }
+}

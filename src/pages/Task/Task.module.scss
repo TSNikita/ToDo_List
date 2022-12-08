@@ -1,0 +1,8 @@
+.task {
+  display: flex;
+  flex-direction: column;
+
+  &_todoPanel {
+    margin-bottom: 50px;
+  }
+}
